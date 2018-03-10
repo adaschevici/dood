@@ -1,5 +1,8 @@
 import React from 'react';
 import { Slide, Heading, Text, Appear } from 'spectacle';
+import styles from './style.scss';
+
+  console.log(styles);
 
 export default (
   <Slide transition={["spin"]} bgColor="primary">
@@ -13,6 +16,8 @@ export default (
     <Heading size={3} textColor="secondary">Heading 3</Heading>
     <Heading size={4} textColor="secondary">Heading 4</Heading>
     <Heading size={5} textColor="secondary">Heading 5</Heading>
-    <Text size={6} textColor="secondary">Standard text</Text>
+    <Appear>
+      <div className={styles.title}>Standard text</div>
+    </Appear>
   </Slide>
 );
