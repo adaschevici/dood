@@ -7,7 +7,7 @@ import preloader from "spectacle/lib/utils/preloader";
 
 const importSlides = [
   import('./slides/1'),
-  import('./slides/1'),
+  import('./slides/4'),
   import('./slides/2'),
   import('./slides/3'),
 ];

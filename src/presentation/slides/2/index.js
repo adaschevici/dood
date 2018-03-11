@@ -1,6 +1,6 @@
 import React from 'react';
 import CodeSlide from 'spectacle-code-slide';
-import Code from '../../../assets/code.example';
+// import Code from '../../../assets/code.example';
 
 export default (
   /* eslint-disable import/no-webpack-loader-syntax */
@@ -8,8 +8,8 @@ export default (
     bgColor="#002833"
     color="white"
     transition={["spin"]}
-    lang="go"
-    code={Code}
+    lang="js"
+    code={require("raw-loader!../../../assets/code/jscode")}
     ranges={[
       { loc: [0, 270], title: "Walking through some code" },
       { loc: [0, 1], title: "The Beginning" },
