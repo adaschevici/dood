@@ -42,7 +42,7 @@ export default class Presentation extends Component {
   render() {
     const { slides } = this.state;
     return (
-      <Deck transition={[]} transitionDuration={0} progress="pacman">
+      <Deck transition={["slide", "zoom"]} transitionDuration={500} progress="pacman">
         {slides.map((slide, index) => React.cloneElement(slide, { key: index }))}
       </Deck>
     );
